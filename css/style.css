@@ -31,33 +31,65 @@ header {
     background-color: var(--text-color);
 }
 
+
 .link {
     list-style: none;
     text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: 1px;
 }
 
 a {
     text-decoration: none;
 }
 
-.container {
+ .container {
+    width: 1170px;
     margin-left: auto;
     margin-right: auto;
-    width: 1200px;
-    outline: 2px solid tomato;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
-.container-contact {
-    
-}
-
-/*page-header*/
-.page-header {
-    background-color: cadetblue;
-}
 
 /* шапка */
+.container.header {
+    display: flex;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    align-items: center;
+}
+.nav-header {
+    display: flex;
+    align-items: center;
+}
+
+.contact.list {
+    display: flex;
+    
+    list-style: none;
+    font-size: 14px;
+    line-height: 1.14;
+
+    letter-spacin: 0.02em;
+    
+}
+.site-nav {
+    display: flex;
+   
+}
 .logo-web {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    
     color: var(--accent-color);
     font-family: Raleway;
     font-weight: bold;
@@ -68,6 +100,9 @@ a {
 }
 
 .logo-studio {
+    padding-top: 24px;
+    padding-bottom: 25px;
+   
     color: var(--primary-text-color);
     font-family: Raleway;
     font-weight: bold;
@@ -77,7 +112,19 @@ a {
     letter-spacing: 0.03em;
 }
 
+.site-nav {
+    display: flex;
+    align-items: center;
+}
+.site-nav li:not(:last-child) {
+    margin-right: 50px;
+    align-items:center;
+}
 .site-nav a {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
     color: var(--primary-text-color);
     font-weight: 500;
     font-size: 14px;
@@ -85,12 +132,15 @@ a {
 
     letter-spacing: 0.02em;
 }
-
 .site-nav .link.current {
     color: var(--accent-color);
 }
 
-.contac.list {
+
+.contact.list {
+    display: flex;
+    align-items: center;
+    
     list-style: none;
     font-size: 14px;
     line-height: 1.14;
@@ -106,6 +156,7 @@ a {
     line-height: 1.42;
     letter-spacing: 0.02em;
 }
+
 
 .site-studio :hover,
 .site-studio :focus {
@@ -126,21 +177,36 @@ a {
 /* банер */
 
 .hero {
+    margin-bottom: 94px;
+    text-align: center;
+
     color: var(--text-color);
     background-color: var(--background-hero-color);
+
+    padding-top: 24px;
+    padding-bottom: 25px;
 }
 
 .hero-tittle {
+    margin-top: 0;
+    margin-bottom: 30;px
+
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
         
-    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+
 }
 
 .hero-button {
+    border-radius: 4px;
+    padding: 10px 32px;
+    min-width: 200px;
+    text-align: center;
+    cursor: pointer;
+
     color: var(--text-color);
     background-color: var(--accent-color);
     font-weight: 700;
@@ -153,19 +219,31 @@ a {
 
 /*качество */
 
+.feature {
+    margin-bottom: 94px;
+}
+
 .feature-caption {
     list-style: none;
 }
 
 .features-subject {
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 10px;
+
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
 
     letter-spacing: 0.03em;
+
 }
 
 .feature-text {
+    padding: 0;
+    margin: 0;
+
     color: var(--secondare-text-color);
     font-size: 14px;
     line-height: 1.71;
@@ -179,11 +257,19 @@ a {
 }
 
 /*команда */
+
+
 .section-comand {
+    padding-bottom: 94px;
+    padding-top: 94px;
+
     background-color: var(--background-color-secondare);
 }
 
 .section-tittle {
+    padding-bottom: 50px;
+    margin: 0;
+
     font-weight: 700;
     font-size: 36px;
     line-height: 1.67;
@@ -197,6 +283,9 @@ a {
 }
 
 .section-subject {
+    margin-top: 0;
+    margin-bottom: 30px;
+    
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
@@ -205,6 +294,9 @@ a {
 }
 
 .section-post {
+    margin-top: 0;
+    margin-bottom: 10px;
+
     color: var(--secondare-text-color);
     font-size: 16px;
     line-height: 1.19;
