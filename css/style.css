@@ -29,6 +29,8 @@ main {
 
 header {
     background-color: var(--text-color);
+
+    border-bottom: 1px solid #EEEEEE;
 }
 
 
@@ -67,15 +69,16 @@ a {
 /* шапка */
 .container.header {
     display: flex;
-    padding-top: 32px;
-    padding-bottom: 32px;
     align-items: center;
 }
 .nav-header {
     display: flex;
     align-items: center;
 }
-
+.header-logo {
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
 
 .site-nav {
     display: flex;  
@@ -114,14 +117,19 @@ a {
 }
 
 .site-nav a {
-    display: block;
-
     color: var(--primary-text-color);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.4;
 
     letter-spacing: 0.02em;
+}
+
+.site-nav.link,
+.contact.list {
+    padding-bottom: 32px;
+    padding-top: 32px;
+    display: block;
 }
 
 .site-nav .link.current {
@@ -184,7 +192,7 @@ a {
 
 .hero-tittle {
     margin-top: 0;
-    margin-bottom: 30;px
+    margin-bottom: 30px;
 
     font-weight: 900;
     font-size: 44px;
@@ -217,9 +225,9 @@ a {
     margin-bottom: 94px;
 }
 
+
 .feature.link {
     display: flex;
-    margin-right: 30px;
 }
 
 .item {
@@ -332,7 +340,11 @@ a {
 }
 .container-button {
     text-align: center;
-    
+}
+
+.portfolio-buttons {
+    padding-top: 88px;
+    padding-bottom: 34px;
 }
 
 .buttons {
@@ -350,10 +362,11 @@ a {
 }
 
 .button-type{
-    
     text-align: center;
     margin: 0;
     padding: 0;
+
+    cursor: pointer;
 }
 
 .buttons li:not(:last-child) {
@@ -364,14 +377,24 @@ a {
 .button-link:focus {
     color: var(--text-color);
     background-color: var(--accent-color);
+    cursor: pointer;
+    border: none;
 }
 
 .button-link {
+    border: none;
     font-weight: 500;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 22px;
+    padding-right: 22px;
+    border-radius: 4px;
 }
 
 /*набор контента */
-
+.portfolio-content {
+    padding-bottom: 100px;
+}
 .container .link {
     display: flex;
     flex-wrap: wrap;
@@ -409,7 +432,7 @@ a {
 }
 
 .content-tittle {
-    margin-bottom: 4px;
+    margin: 0;
 
     font-family: 'Roboto', sans-serif;
     color: var(--primary-text-color);
@@ -421,7 +444,8 @@ a {
 }
 
 .content-text {
-
+    margin: 0;
+    
     font-family: 'Roboto', sans-serif;
     color: var(--primary-text-color);
     font-size: 18px;
@@ -437,13 +461,16 @@ footer {
 }
 
 .container.footer {
-    
     margin-bottom: 20px;
-   
-    padding-top: 60px;
-    padding-bottom: 60px;
 }
 
+.footer-logo {
+    padding-top: 60px;
+}
+
+.footer-address {
+    padding-bottom: 60px;
+}
 .container.address{
     margin: 0;
     padding: 0; 
