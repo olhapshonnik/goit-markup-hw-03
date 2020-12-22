@@ -180,17 +180,26 @@ a {
 /* банер */
 
 .hero {
+    display: block;
     text-align: center;
+    /*display: flex;
+    text-align: center;
+    max-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;*/
 
     color: var(--text-color);
     background-color: var(--background-hero-color);
-
-    padding-top: 24px;
-    padding-bottom: 25px;
 }
 
 .hero-tittle {
+    
     margin-top: 0;
+    margin-bottom: 30px;
+    
 
     font-weight: 900;
     font-size: 44px;
@@ -198,13 +207,16 @@ a {
         
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    text-align: center;
 
+    background-color: teal;
 }
 
 .hero-button {
+    margin-top: 30px;
     border-radius: 4px;
     padding: 10px 32px;
-    min-width: 200px;
+    
     text-align: center;
     cursor: pointer;
 
@@ -349,14 +361,13 @@ a {
 
 .buttons {
     display: flex;
-        
+    min-width: 611px;
     justify-content: center;
-    margin-bottom: 50px;
    
     list-style: none;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 16px;
-    line-height: 1.62;
+    line-height: 54px;
 
     letter-spacing: 0.03em;
 }
@@ -370,7 +381,7 @@ a {
 }
 
 .buttons li:not(:last-child) {
-    margin-right: 30px;
+    margin-right: 8px;
 }
 
 .button-link:hover, 
