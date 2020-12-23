@@ -60,6 +60,7 @@ a {
     padding-left: 15px;
     padding-right: 15px;
 }
+
  img {
     display: block;
     max-width: 100%;
@@ -71,10 +72,12 @@ a {
     display: flex;
     align-items: center;
 }
+
 .nav-header {
     display: flex;
     align-items: center;
 }
+
 .header-logo {
     padding-top: 24px;
     padding-bottom: 25px;
@@ -109,6 +112,7 @@ a {
 .site-nav {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .site-nav li:not(:last-child) {
@@ -129,7 +133,6 @@ a {
 .contact.list {
     padding-bottom: 32px;
     padding-top: 32px;
-    display: block;
 }
 
 .site-nav .link.current {
@@ -180,7 +183,6 @@ a {
 /* банер */
 
 .hero {
-    
     text-align: center;
     width: 1600px;
     margin-left: auto;
@@ -188,15 +190,6 @@ a {
     height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
-
-/* display: flex;
-    text-align: center;
-    max-width: 1600px;
-    height: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: center;
-    align-items: center;*/
 
     color: var(--text-color);
     background-color: var(--background-hero-color);
@@ -236,7 +229,7 @@ a {
 }
 
 /*качество */
-.advantage {
+.features {
     padding-bottom: 94px;
     padding-top: 94px;
 }
@@ -255,7 +248,7 @@ a {
 }
 
 .features-subject {
-    padding: 0;
+    margin-top: 0;
     margin-bottom: 10px;
     width: 270px;
 
@@ -267,7 +260,6 @@ a {
 }
 
 .feature-text {
-    padding: 0;
     margin: 0;
 
     color: var(--secondare-text-color);
@@ -279,9 +271,8 @@ a {
 
 
 /*род деятельности */
-.activity {
-    padding-bottom: 90px;
-    padding-top: 90px;
+.section-work {
+    padding-bottom: 94px;
 }
 
 .work-list {
@@ -296,9 +287,9 @@ a {
 
 
 /*команда */
-.comand {
-    padding-bottom: 30px;
-    padding-top: 30px;
+.comands {
+    padding-bottom: 94px;
+    padding-top: 94px;
 }
 .section-comand {
     text-align: center;
@@ -307,7 +298,7 @@ a {
 }
 
 .section-tittle {
-    padding-bottom: 50px;
+    margin-bottom: 50px;
     margin: 0;
 
     font-weight: 700;
@@ -321,6 +312,8 @@ a {
 .section-works {
     display: flex;
 
+    margin: 0;
+    padding: 0;
     list-style: none;
 }
 .section-works li:not(:last-child) {
@@ -331,8 +324,15 @@ a {
     border-radius: 0px 0px 4px 4px;
 }
 
+.worker {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
 .section-subject {
-    
+    margin-top: 0;
+    margin-bottom: 10px;
+
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
@@ -341,9 +341,8 @@ a {
 }
 
 .section-post {
-    margin-top: 0;
-    margin-bottom: 10px;
-
+    margin: 0;
+    
     color: var(--secondare-text-color);
     font-size: 16px;
     line-height: 1.19;
@@ -353,19 +352,19 @@ a {
 
 /* портфолио */
 /* кнопки */
-.portfolio {
+.section-portfolio {
+    padding-bottom: 100px;
+    padding-top: 88px;
     background-color: var(--background-color);
 }
 .container-button {
     text-align: center;
 }
 
-.portfolio-buttons {
-    padding-top: 88px;
-    padding-bottom: 34px;
-}
 
 .buttons {
+    margin: 0;
+    margin-bottom: 34px;
     display: flex;
     min-width: 611px;
     justify-content: center;
@@ -409,19 +408,27 @@ a {
 }
 
 /*набор контента */
-.portfolio-content {
-    padding-bottom: 100px;
-}
-.container .link {
+.container .link{
     display: flex;
     flex-wrap: wrap;
-}
+}   
 
 .content-cards {
     width: 370px;
     margin-right: 30px;
     margin-bottom: 30px;
 }
+
+.content.list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container .link{
+    display: flex;
+    flex-wrap: wrap;
+}   
+
 
 .content-cards:nth-child(3n) {
     margin-right: 0;
@@ -431,6 +438,9 @@ a {
     margin-bottom: 0;
 }
 
+.link-content{ 
+    display: block;
+}
 .content-portfolio {
     display: block;
 }
@@ -450,6 +460,7 @@ a {
 
 .content-tittle {
     margin: 0;
+    padding: 0;
 
     font-family: 'Roboto', sans-serif;
     color: var(--primary-text-color);
@@ -462,6 +473,7 @@ a {
 
 .content-text {
     margin: 0;
+    padding: 0;
     
     font-family: 'Roboto', sans-serif;
     color: var(--primary-text-color);
@@ -473,29 +485,25 @@ a {
 
 /*футер */
 footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
     color: var(--text-color);
     background: var(--background-hero-color);
 }
 
-.container.footer {
-    margin-bottom: 20px;
-}
-
 .footer-logo {
-    display: inline-block;
-    padding-top: 60px;
+    display: block;
+    margin-bottom: 20px;
+    padding: 0; 
 }
 
 .footer-address {
     display: inline-block;
-    padding-bottom: 60px;
 }
 .container.address{
     margin: 0;
     padding: 0; 
-}
-.address {
-    margin-top: 20px;
 }
 
 .contact-item {
@@ -526,9 +534,7 @@ footer {
 
 .container .address {
     display: flex;
-    
     flex-direction: column;
-    margin-bottom: 9px;
     flex-wrap: wrap;
 
     font-style: normal ;
@@ -538,6 +544,9 @@ footer {
     letter-spacing: 0.03em;
 }
 
+.address {
+    margin-bottom: 9px;
+}
 .contact-mailto {
     width: 231px;
 
