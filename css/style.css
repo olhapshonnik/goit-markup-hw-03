@@ -319,6 +319,7 @@ a {
 .section-works li:not(:last-child) {
     margin-right: 30px;
 }
+
 .section-comand {
     background: var(--text-color);
     border-radius: 0px 0px 4px 4px;
